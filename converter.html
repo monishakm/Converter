@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Pounds to Kg converter
+    </title>
+    <style>
+        body{
+            background-color: hsl(240, 36%, 72%);
+        }
+        .kook{
+            /*text-align: center;
+            border: 5px solid  palevioletred;
+            background: rgb(20, 136, 231);
+            padding: 10 px;
+            max-width: fit-content;
+            margin:auto;
+            margin top:30%;*/
+
+            margin: auto;
+            border:5px solid  #da5768;
+            padding:10px;
+            text-align: center;
+            background: white;
+            max-width: fit-content;
+            margin-top:15%;
+        }
+    </style>
+    <body>
+        <div class="kook">
+            <h1>Welcome to converter page</h1>
+            
+                <label>Pounds</label>
+                <input type="weight" placeholder="Enter your weight in Pounds"
+                oninput="jk(this.value)" onchange="jk(this.value)">
+                <p>Kilograms: <span id="ans"></span></p>
+
+                <label>Celsius</label>
+                <input type="cel" placeholder="Enter temperature in degree C"
+                oninput="kok1(this.value)" onchange="kok1(this.value)">
+                <p> Fahrenheit:<span id="ans1"></span></p>
+
+                <label>Fahrenheit</label>
+                <input type="fah" placeholder="Enter temperature in degree F"
+                oninput="kok2(this.value)" onchange="kok2(this.value)">
+                <p> Celsius: <span id="ans2"></span></p>
+                
+            
+            <script>
+                function jk(val){
+                    document.getElementById("ans").innerHTML=val/2.2046;
+                }
+                function kok1(val1)
+                {
+                    document.getElementById("ans1").innerHTML=(val1*1.8)+32;
+                }
+                function kok2(val2
+                )
+                {
+                    document.getElementById("ans2").innerHTML=(val2-32)*(5/9);
+                }
+
+            </script>
+        </div>    
+    </body>
+</head>
